@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tracking Device</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <header>
+
+      <h1 id="name" style="color:white; padding-left:280px; margin-top:5px"><u>iSEAL</u></h1>
+
+      <div id="nav">
+        <a href="#" class="btn pull-right">Sign In/Out</a>
+
+        <a href="settings.html" class="btn pull-right midlink">Settings</a>
+        <a href="#" class="btn pull-right">Support</a>
+        <a href="#" class="btn pull-right firstlink">Buy</a>
+
+
+
+
+      </div>
+
+      <div id="view">
+        <div id="key">
+          <button id="view1" class="btn btn-default on">Map</button>
+          <button id="view2" class="btn btn-default off">List</button>
+        </div>
+      </div>
+
+    </header>
+    
+    
+    <div id="container" class="col-md-12">
+      <div class="col-md-9 left-box">
+        <img src="map.png" id="map">
+        <table id="tbList" class="nodisplay">
+          <thead>
+            <tr><th>Serial No.</th><th>L-Door Stat</th><th>R-Door Stat</th><th>Battery Lvel</th><th>Rqt Email</th><th>Email Opt Out</th><th>Status</th></tr>
+          </thead>
+            <tr><td>17</td><td>Closed</td><td>Open</td><td>Low</td><td><button>Ping</button></td><td><input type="checkbox"></td><td><select id="status" name="view">
+              <option value="purchased">Purchased</option>
+              <option value="active">Active</option>
+              <option value="decomissioned">Decomissioned</option>
+            </select></td></tr>
+            <tr><td>24</td><td>Closed</td><td>Closed</td><td>Full</td><td><button>Ping</button></td><td><input type="checkbox"></td><td><select id="status" name="view">
+              <option value="purchased">Purchased</option>
+              <option value="active">Active</option>
+              <option value="decomissioned">Decomissioned</option>
+            </select></td></tr>
+            <tr><td>31</td><td>Closed</td><td>Closed</td><td>Full</td><td><button>Ping</button></td><td><input type="checkbox"></td><td><select id="status" name="view">
+              <option value="purchased">Purchased</option>
+              <option value="active">Active</option>
+              <option value="decomissioned">Decomissioned</option>
+            </select></td></tr>
+          
+        </table>
+      </div>
+      <div class="col-md-3 right-box">
+        <div class="col-md-11 sidebar">
+          <table id="sideList">
+          <thead>
+            <tr><th>Nml Status</th><th>Serial No</th><th>Battery Lvel</th></tr>
+          </thead>
+          <tr><td>1</td><td>17</td><td>Low</td></tr>
+          <tr><td>0</td><td>24</td><td>Full</td></tr>
+          <tr><td>0</td><td>31</td><td>Full</td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+        
+
+
+        </table>
+        </div>
+
+        
+
+        <div class="col-md-1 sidebarHeader">
+          <img src="collapseIcon.png" id="toggle" style="height:25px">
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
