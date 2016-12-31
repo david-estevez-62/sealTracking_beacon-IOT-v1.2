@@ -1,0 +1,261 @@
+
+html, body {
+  background: #808184;
+  /*background: #404040;*/
+  height:100%;
+  width:100%;
+}
+
+
+header {
+  background: #808184;
+  /*background: #404040;*/
+  height:156px;
+}
+#nav{
+  padding-left:-40px;
+}
+#nav a {
+  background: grey;
+  width:80px;
+  border-radius: 0;
+  text-decoration: none;
+  color: black;
+  margin-top: 75px;
+}
+a.btn {
+  font-size: 13px;
+}
+
+#nav a:hover {
+  background:darkgrey;
+}
+
+a#logoTitle{
+  text-decoration: none;
+  color: white;
+}
+/*a.midlink {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+a.firstlink {
+  border-right: 1px solid black;
+}*/
+
+#name {
+  font-family: 'NASDAQER', sans-serif;
+}
+
+/*#view {
+  background-color: #4A4A4C;
+  position: absolute;
+  left:70px;
+  top:30px;
+  width: 175px;
+  height: 75px;
+  box-shadow:  5px 3px 3px black;
+}*/
+#view {
+  background-color: #4A4A4C;
+  width: 175px;
+  height: 75px;
+  position: absolute;
+  top: 55px;
+  box-shadow:  5px 3px 3px black;
+  z-index: 1;
+}
+
+
+#view button {
+  margin: 0;
+}
+
+#key {
+  padding-top: 21px;
+  padding-left: 35px;
+}
+
+.on {
+  background-color: #A9A9A9;
+  color:white;
+  border-radius: 0;
+  margin: 0;
+}
+.on:hover{
+background-color: #A9A9A9;
+}
+.on:active{
+  outline:0;
+}
+.off {
+  background-color: #4A4A4C;
+  color:white;
+  border-radius: 0;
+  margin:0;
+}
+.off:hover{
+  background-color: #4A4A4C;
+}
+.off:active{
+  outline:0;
+}
+
+.left-box {
+  height:570px;
+  padding:5%;
+  margin: 0;
+}
+
+
+.right-box {
+  height:570px;
+  margin:0;
+  padding: 0;
+}
+
+#map {
+  width: 95%;
+  height: 90%;
+}
+
+.sidebarHeader{
+  /*position:fixed;
+  top:7%;
+  left:75%;*/
+  background-color: #4A4A4C;
+  position: absolute;
+  right:0;
+  bottom:0;
+  width:30px;
+  height:100%;
+  padding:0;
+  margin: 0;
+}
+
+.sidebar{
+  /*position:fixed;
+  top:7%;
+  left:75%;*/
+  background-color: darkgrey;
+  height:100%;
+  /*display: none;*/
+}
+#toggle{
+  margin-left: 2px;
+  margin-top: 5px;
+}
+#container{
+  margin:0;
+  padding: 0;
+  height: 570px;
+}
+
+.nodisplay {
+  display: none;
+}
+#tbList {
+  color: white;
+  font-size: 16px;
+}
+#tbList th:nth-child(1) {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#tbList th {
+  color: black;
+  padding-left: 50px;
+  width:200px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#tbList tr td {
+  padding-left: 75px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+
+#msgHistoryList {
+  margin-left: 55px;
+}
+#msgHistoryList tr td:nth-child(1) {
+  width:90px;
+}
+#msgHistoryList tr td:nth-child(3) {
+  width:220px;
+}
+#msgHistoryList tr td:nth-child(4) {
+  width:170px;
+}
+#msgHistoryList tr td:nth-child(5) {
+  width:170px;
+}
+#msgHistoryList tr td {
+  width:140px;
+}
+
+
+#unitIdTitle {
+  margin-left: 30px;
+}
+
+
+
+#sideList th {
+  width: 95px;
+  padding-top: 10px;
+}
+
+#sideList td {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+#sideList th:nth-child(1) {
+  width:55px;
+  border-right: 1px solid black;
+  padding-left: 0px;
+}
+#sideList th:nth-child(2) {
+  padding-left: 10px;
+}
+#sideList td:nth-child(1) {
+  width:55px;
+  border-right: 1px solid black;
+  padding-left: 10px;
+}
+@media(max-width: 1068px) {
+    #map{
+      height: 80%;
+      margin:0px auto;
+    }
+}
+@media(max-width: 992px) {
+  html,body{background-color: darkgrey}
+    #map{
+      height: 80%;
+      margin:0px auto;
+    }
+}
+@media(max-width: 780px) {
+    html,body{background-color: darkgrey}
+}
+@media(max-width: 720px) {
+    #map{
+      height: 60%;
+      margin:0px auto;
+    }
+    #sideList{
+      margin-top: -160px;
+    }
+}
+@media(max-width: 560px) {
+    #map{
+      height: 50%;
+      margin:0px auto;
+    }
+    #sideList{
+      margin-top: -190px;
+    }
+}

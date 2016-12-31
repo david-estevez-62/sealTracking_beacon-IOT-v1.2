@@ -1,0 +1,23 @@
+<div class="col-md-12">
+  <table id="tbList" ng-controller="unitListCtrl">
+          <thead>
+            <tr><th>Serial No.</th><th>L-Door Stat</th><th>R-Door Stat</th><th>Battery Level</th><th>Rqt Email</th><th>Email Opt Out</th><th>Status</th></tr>
+          </thead>
+            <tr ng-repeat="unit in units">
+              <td><a href='#/unit/{{unit.serno}}'>{{unit.serno}}</a></td>
+              <td>{{unit.leftDoor}}</td>
+              <td>{{unit.rightDoor}}</td>
+              <td>{{unit.batterylevel}}</td>
+              <td><button>Ping</button></td>
+              <td><input type="checkbox"></td>
+              <td>
+                <select id="status" name="view">
+                  <option value="purchased">Purchased</option>
+                  <option value="active">Active</option>
+                  <option value="decomissioned">Decomissioned</option>
+                </select>
+              </td>
+            </tr>
+        </table>
+
+</div>

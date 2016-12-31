@@ -12,13 +12,16 @@ header {
   /*background: #404040;*/
   height:156px;
 }
+#nav{
+  padding-left:-40px;
+}
 #nav a {
   background: grey;
   width:80px;
   border-radius: 0;
   text-decoration: none;
   color: black;
-  margin-top: -15px;
+  margin-top: 75px;
 }
 a.btn {
   font-size: 13px;
@@ -26,16 +29,15 @@ a.btn {
 
 #nav a:hover {
   background:darkgrey;
-  float: left;
 }
 
-a.midlink {
+/*a.midlink {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
 a.firstlink {
   border-right: 1px solid black;
-}
+}*/
 
 #name {
   font-family: 'NASDAQER', sans-serif;
@@ -54,6 +56,8 @@ a.firstlink {
   background-color: #4A4A4C;
   width: 175px;
   height: 75px;
+  position: absolute;
+  top: 55px;
   box-shadow:  5px 3px 3px black;
   z-index: 1;
 }
@@ -94,14 +98,14 @@ background-color: #A9A9A9;
 }
 
 .left-box {
-  height:575px;
+  height:570px;
   padding:5%;
   margin: 0;
 }
 
 
 .right-box {
-  height:576px;
+  height:570px;
   margin:0;
   padding: 0;
 }
@@ -191,4 +195,38 @@ background-color: #A9A9A9;
   width:55px;
   border-right: 1px solid black;
   padding-left: 10px;
+}
+@media(max-width: 1068px) {
+    #map{
+      height: 80%;
+      margin:0px auto;
+    }
+}
+@media(max-width: 992px) {
+  html,body{background-color: darkgrey}
+    #map{
+      height: 80%;
+      margin:0px auto;
+    }
+}
+@media(max-width: 780px) {
+    html,body{background-color: darkgrey}
+}
+@media(max-width: 720px) {
+    #map{
+      height: 60%;
+      margin:0px auto;
+    }
+    #sideList{
+      margin-top: -160px;
+    }
+}
+@media(max-width: 560px) {
+    #map{
+      height: 50%;
+      margin:0px auto;
+    }
+    #sideList{
+      margin-top: -190px;
+    }
 }

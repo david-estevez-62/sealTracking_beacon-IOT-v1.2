@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Tracking Device</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+  </head>
+  <body>
+    <header>
+
+      <h1 id="name" style="color:white;position:absolute;left:280px;top:55px;"><a href='#/' id='logoTitle'><u>iSEAL</u></a></h1>
+
+      <div id="nav">
+        <a href="#" class="btn pull-right">Sign In/Out</a>
+        <a href="settings.html" class="btn pull-right midlink">Settings</a>
+        <a href="#" class="btn pull-right">Support</a>
+        <a href="#" class="btn pull-right firstlink">Buy</a>
+      </div>
+
+      <div id="view">
+        <div id="key" ng-controller='unitListCtrl'>
+          <a href='#/'><button id="view1" class="btn btn-default on">Map</button></a>
+          <a href='#/list'><button id="view2" class="btn btn-default off">List</button></a>
+        </div>
+      </div>
+
+    </header>
+
+    
+    <div id="container" class="col-md-12">
+      <ng-view></ng-view>
+    </div>
+    
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUaQQwfhiO-ZsQYZtgCZcm6L07w4di4JU"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

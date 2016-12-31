@@ -1,0 +1,56 @@
+<div id="catFilters" style="position:absolute;left:0;z-index:2;">
+      <select>
+        <option value="Active" active>Deployed/Active</option>
+        <option value="Decommissioned">PostDeployed/Decomissioned</option>
+        <option value="Purchased">PreDeployed/Purchased</option>
+      </select>
+    </div>
+      <div class="col-md-9 left-box">
+
+        <div id="map"></div>
+        <table id="tbList" class="nodisplay" ng-controller="unitsCtrl">
+          <thead>
+            <tr><th>Serial No.</th><th>L-Door Stat</th><th>R-Door Stat</th><th>Battery Level</th><th>Rqt Email</th><th>Email Opt Out</th><th>Status</th></tr>
+          </thead>
+            <tr ng-repeat="unit in units">
+              <td><a href='' ng-click='findUnit(unit.serno)'>{{unit.serno}}</a></td>
+              <td>{{unit.leftDoor}}</td>
+              <td>{{unit.rightDoor}}</td>
+              <td>{{unit.batterylevel}}</td>
+              <td><button>Ping</button></td>
+              <td><input type="checkbox"></td>
+              <td>
+                <select id="status" name="view">
+                  <option value="purchased">Purchased</option>
+                  <option value="active">Active</option>
+                  <option value="decomissioned">Decomissioned</option>
+                </select>
+              </td>
+            </tr>
+        </table>
+      </div>
+
+
+
+      <div class="col-md-3 right-box">
+        <div class="col-md-11 sidebar">
+          <table id="sideList" ng-controller="unitsCtrl">
+          <thead>
+            <tr><th>Nml Status</th><th>Serial No</th><th>Battery Level</th><th>Last Coords</th></tr>
+          </thead>
+          <tr ng-repeat="unit in units">
+            <td><img ng-src="{{unit.status}}" style="height:15px;width:15px"></td>
+            <td><a href='' ng-click='findUnit(unit.serno)'>{{unit.serno}}</a></td>
+            <td>{{unit.batterylevel}}</td>
+            <td>{{unit.coords}}</td>
+          </tr>
+        </table>
+        </div>
+        
+        
+
+        <div class="col-md-1 sidebarHeader">
+          <img src="assets/collapseIcon.png" id="toggle" style="height:25px">
+        </div>
+      </div>
+      

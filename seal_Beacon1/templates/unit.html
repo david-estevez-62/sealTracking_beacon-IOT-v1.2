@@ -1,0 +1,20 @@
+<div class="col-md-12">
+        <h4 id='unitIdTitle'>Unit {{unitId}}</h4>
+        <table id="msgHistoryList" ng-controller="unitDetailsCtrl">
+          <thead>
+            <tr><th>Msg No.</th><th>Sched/Or Event</th><th>Date & Time</th><th>L-Door Status (Prox)</th><th>R-Door Status (Prox)</th><th>Lght Status</th><th>Coordinates</th><th>Battery Level</th><th>Signal Strength (RSSI)</th><th>Overall Status</th></tr>
+          </thead>
+            <tr ng-repeat="unit in units">
+              <td>{{unit.msgNo}}</td>
+              <td>{{unit.schedEvent}}</td>
+              <td>{{unit.dateAndTime}}</td>
+              <td>{{unit.leftDoor}}</td>
+              <td>{{unit.rightDoor}}</td>
+              <td>{{unit.lightStatus}}</td>
+              <td>{{unit.coords}}</td>
+              <td>{{unit.batteryLevel}}</td>
+              <td>{{unit.signalStrength}}</td>
+              <td>{{unit.overallStatus}}</td>
+            </tr>
+        </table>
+      </div>

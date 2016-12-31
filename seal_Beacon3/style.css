@@ -1,0 +1,47 @@
+html, body {
+  background-color: grey;
+    height: 100%;
+    width:100%;
+    color:black;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    margin-top:40px;
+    padding:0;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding:0;
+}
+
+.inner {
+    margin-top: -10px;
+    padding:45px;
+    margin-left: auto;
+    margin-right: auto; 
+    width:48%;
+    height:652px;
+    background-color: darkgrey;
+    z-index:-40;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.7);
+}
+
+h2 {
+    
+    color:black;
+}
+
+hr {
+    background-color: #808184;
+    height:4px;
+    border:none;
+}
+
+
